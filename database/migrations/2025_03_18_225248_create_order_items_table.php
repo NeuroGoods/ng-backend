@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reviews', function (Blueprint $table) {
+        Schema::create('order_items', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('order_id')->constrained();
             $table->foreignId('product_id')->constrained();
-            $table->text('comment');
-            $table->integer('rating');
+            $table->integer('quantity');
+            $table->decimal('price', 8, 2);
             $table->timestamps();
         });
     }
