@@ -155,51 +155,51 @@ http://127.0.0.1:8000/api/categories/{id}
 
 **GET**     (read all order): 
 ```
-http://127.0.0.1:8000/api/order
+http://127.0.0.1:8000/api/orders
 ```
 **GET**     (read one order): 
 ```
-http://127.0.0.1:8000/api/order/{id}
+http://127.0.0.1:8000/api/orders/{id}
 ```
 **POST**    (create a new order): 
 ```
-http://127.0.0.1:8000/api/order
+http://127.0.0.1:8000/api/orders
 ```
 **PUT**     (edit one order): 
 ```
-http://127.0.0.1:8000/api/order/{id}
+http://127.0.0.1:8000/api/orders/{id}
 ```
 **DELETE**  (delete an order): 
 ```
-http://127.0.0.1:8000/api/order/{id}
+http://127.0.0.1:8000/api/orders/{id}
 ```
 
 **POST**    (Order an product)
 ```
-http://127.0.0.1:8000/api/users/{id}/order/{id}
+http://127.0.0.1:8000/api/users/{id}/orders/{id}
 ```
 
 ### 🔸 Api Review 
 
 **GET**     (read all review): 
 ```
-http://127.0.0.1:8000/api/review
+http://127.0.0.1:8000/api/reviews
 ```
 **GET**     (read one review): 
 ```
-http://127.0.0.1:8000/api/review/{id}
+http://127.0.0.1:8000/api/reviews/{id}
 ```
 **POST**    (create a new review): 
 ```
-http://127.0.0.1:8000/api/review
+http://127.0.0.1:8000/api/reviews
 ```
 **PUT**     (edit one review): 
 ```
-http://127.0.0.1:8000/api/review/{id}
+http://127.0.0.1:8000/api/reviews/{id}
 ```
 **DELETE**  (delete an review): 
 ```
-http://127.0.0.1:8000/api/review/{id}
+http://127.0.0.1:8000/api/reviews/{id}
 ```
 
 ### 🔸 Api Users 
