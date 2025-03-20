@@ -1,7 +1,7 @@
 # Welcome to NeuroGoods  
-Where every mind shines its own light!
+🧠 Where every mind shines its own light!💡
 
-[screenshot]
+![logoNeuroGoods](https://github.com/user-attachments/assets/c9dc3a62-7e83-41c0-b5ef-c724e0fbc63d)
 
 NeuroGoods is an inclusive marketplace specialising in products designed for neurodivergent people. The platform aims to improve the well-being, comfort and quality of life of those who perceive and experience the world in a unique way. Here you will find a variety of items tailored to sensory, cognitive and organisational needs.
 
@@ -78,7 +78,9 @@ To run the project tests, use the following command:
 ```
 
 - This project has a **82.4%** of test coverage.
-[screenshot]
+
+![testing](https://github.com/user-attachments/assets/6e9be69d-d9cd-42ed-b0b5-b5365d1cf282)
+
 
 You can also see the coverage in a web browser using:
 
@@ -86,16 +88,12 @@ You can also see the coverage in a web browser using:
   php artisan test --coverage-html=coverage-report
 ``` 
 
-- A folder called coverage-report will also have been generated with **82,4%** coverage.
-
-[screenshot]
-
 
 ## 📊📁 Diagrams made (BBDD)
 
 Below is a diagram of the database, showing different relationships between tables:
 
-[screenshot]
+![diagramaBBDD](https://github.com/user-attachments/assets/9e5c006f-ca30-4ba7-a533-636a27d5526e)
 
 - **Products:** Many to many relationship.
 - **Category** One to many relationship. Several products can have one category.
@@ -235,7 +233,7 @@ http://127.0.0.1:8000/api/users/{id}
 
 The project follows the structure of the MVC design pattern, which allows a better separation of responsibilities and facilitates the maintenance of the code. We also use a laravel 11 framework to help us develop in PHP.
 
-[screenshot]
+![estructuraMVC](https://github.com/user-attachments/assets/2ecf4108-4d00-47c5-bb7e-afe8ac59a77d)
 
 
 ## 🛠️🚀 Tech and tools
