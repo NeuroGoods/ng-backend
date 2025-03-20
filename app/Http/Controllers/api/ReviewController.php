@@ -27,7 +27,7 @@ class ReviewController extends Controller
     {
         $validatedData = $request->validate([
          
-            'user_id' => 'required'
+            'user_id' => 'required',
             'product_id' => 'required',
             'comment' => 'required',
             'rating' => 'required',
@@ -50,7 +50,7 @@ class ReviewController extends Controller
     public function edit(string $id)
     {
         
-    }s
+    }
 
  
      
@@ -63,10 +63,11 @@ class ReviewController extends Controller
         }
 
         $validated = $request->validate([
-            'name' => 'required',
-            'description' => 'required',
-            'price' => 'required',
-            'category_id' => 'required',
+            'user_id' => 'required',
+            'product_id' => 'required',
+            'comment' => 'required',
+            'rating' => 'required',
+            
         ]);
 
         $review->update(array_filter($validated));
