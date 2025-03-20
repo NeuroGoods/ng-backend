@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\product;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -11,7 +11,7 @@ class ProductController extends Controller
    
     public function index()
     {
-        $products = product::all();
+        $products = Product::all();
         return response()->json($products);
     }
 
@@ -34,14 +34,14 @@ class ProductController extends Controller
             'category_id' => 'required',
         ]);
 
-        $product = product::create($validatedData);
+        $product = Product::create($validatedData);
         return response()->json($product, 201);
     }
 
    
     public function show(string $id)
     {
-        $product = product::find($id);
+        $product = Product::find($id);
         return response()->json($product);
     }
 
@@ -55,7 +55,7 @@ class ProductController extends Controller
      
     public function update(Request $request, string $id)
     {
-        $product = product::find($id);
+        $product = Product::find($id);
 
         if (!$product) {
             return response()->json(['message' => 'Product not found'], 404);
@@ -75,7 +75,7 @@ class ProductController extends Controller
     
     public function destroy(string $id)
     {
-        $product = product::find($id);
+        $product = Product::find($id);
 
         if (!$product) {
             return response()->json(['message' => 'Product not found'], 404);
