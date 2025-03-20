@@ -27,22 +27,17 @@ class categoryController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required',
-            'description' => 'required',
-            'price' => 'required',
-            'stock' => 'required',
-            'image' => 'required',
-            'category_id' => 'required',
         ]);
 
         $category = Category::create($validatedData);
-        return response()->json($product, 201);
+        return response()->json($category, 201);
     }
 
    
     public function show(string $id)
     {
         $category = Category::find($id);
-        return response()->json($product);
+        return response()->json($category);
     }
 
     
@@ -55,7 +50,7 @@ class categoryController extends Controller
      
     public function update(Request $request, string $id)
     {
-        $product = Category::find($id);
+        $category = Category::find($id);
 
         if (!$category) {
             return response()->json(['message' => 'category not found'], 404);
@@ -63,9 +58,6 @@ class categoryController extends Controller
 
         $validated = $request->validate([
             'name' => 'required',
-            'description' => 'required',
-            'price' => 'required',
-            'category_id' => 'required',
         ]);
 
         $category->update(array_filter($validated));
